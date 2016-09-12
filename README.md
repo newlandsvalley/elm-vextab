@@ -7,7 +7,7 @@ VexTab renders a score by side-effect.  You must create a __canvas__ tag in your
 
 ## Integrating the module
 
-Because we are wrapping a javascript module, our only option is to use ports, and so the integration of the various pieces of javascript that go to make up a final web page have to be assembled by hand - see  examples/basic.html for an example.  
+Because we are wrapping a javascript module, our only option is to use ports, and so the integration of the various pieces of javascript that go to make up a final web page have to be assembled by hand - see  [basic.html](https://github.com/newlandsvalley/elm-vextab/blob/master/examples/basic.html) for an example.  
 
 The module exposes the following:
 
