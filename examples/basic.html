@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Elm render score with VexTab example</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/vextab.css">
+
+  </head>
+  <body>
+    <div id="elmVexTab"></div>
+    <script src="../js/vextab-div.js"></script>
+    <script src="../distjs/elmVexTabModule.js"></script>
+    <script src="distjs/elmVexTabBasic.js"></script>
+    <script>
+    var node = document.getElementById('elmVexTab');
+    var myapp = Elm.VexTabBasic.embed(node);
+    </script>
+    <script src="../js/nativeVexTab.js"></script>
+
+ 
+  </body>
+</html>
