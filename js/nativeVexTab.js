@@ -13,8 +13,8 @@ myapp.ports.requestRender.subscribe(render);
 vextab = VexTabDiv;
 vexDiv = null;
 
-function init(vexDivName) {
-  console.log(vexDivName);
+function init(config) {
+  console.log(config.canvasDivId);
 
   VexTab = vextab.VexTab;
   Artist = vextab.Artist;
@@ -22,14 +22,14 @@ function init(vexDivName) {
 
   Artist.DEBUG = true;
   VexTab.DEBUG = false;
-  
+
   try {
-     vexDiv = $(vexDivName)[0];
+     vexDiv = $(config.canvasDivId)[0];
      // Create VexFlow Renderer from canvas element with id vexDiv
      renderer = new Renderer(vexDiv, Renderer.Backends.CANVAS);
 
      // Initialize VexTab artist and parser.
-     artist = new Artist(10, 10, 600, {scale: 0.8});
+     artist = new Artist(config.canvasX, config.canvasY, config.canvasWidth, {scale: config.scale});
      vextab = new VexTab(artist);
      myapp.ports.initialised.send(null);
    } catch (e) {
@@ -48,4 +48,3 @@ function render(text) {
       myapp.ports.rendered.send(e.message);
    }
 }
-

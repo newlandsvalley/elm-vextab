@@ -2,8 +2,10 @@ port module VexTab.Ports exposing (..)
 
 -- outgoing ports (for commands to javascript)
 
+import VexTab.Config exposing (Config)
 
-port initialise : String -> Cmd msg
+
+port initialise : Config -> Cmd msg
 
 
 port requestRender : String -> Cmd msg

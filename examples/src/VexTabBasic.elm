@@ -5,6 +5,7 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (on, onClick, onInput)
 import Html.App as Html
 import VexTab.Module as VexTab
+import VexTab.Config exposing (Config)
 
 
 main =
@@ -24,13 +25,23 @@ type alias Model =
     }
 
 
+defaultConfig : Config
+defaultConfig =
+    { canvasDivId = "#vextab"
+    , canvasX = 10
+    , canvasY = 10
+    , canvasWidth = 1200
+    , scale = 0.8
+    }
+
+
 {-| initialise the model and delegate the initial command to that of the vextab module
 -}
 init : ( Model, Cmd Msg )
 init =
     let
         ( vextabModel, vextabCmd ) =
-            VexTab.init "#vextab"
+            VexTab.init defaultConfig
     in
         { text = sampleVexText
         , vextab = vextabModel
