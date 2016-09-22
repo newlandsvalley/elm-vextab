@@ -4,7 +4,7 @@ import Html exposing (Html, Attribute, text, div, input, button, textarea, canva
 import Html.Attributes exposing (..)
 import Html.Events exposing (on, onClick, onInput)
 import Html.App as Html
-import VexTab.Module as VexTab
+import VexTab exposing (..)
 import VexTab.Config exposing (Config)
 
 

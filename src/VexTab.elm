@@ -1,4 +1,4 @@
-module VexTab.Module exposing (Model, Msg(RequestRenderScore), init, update, subscriptions)
+module VexTab exposing (Model, Msg(RequestRenderScore), init, update, subscriptions)
 
 {-|
 #types
