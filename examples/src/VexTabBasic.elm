@@ -157,10 +157,7 @@ btnStyle =
 
 sampleVexText : String
 sampleVexText =
-    "options space=14 font-size=14\n"
-        ++ "stave \n"
+       "stave \n"
         ++ "notation=true \n"
         ++ "key=G time=3/4 \n"
-        ++ "notes :q A/4 B/4 :8 C/5 D/5 |  E/5 F/5  :q A/4 D/4 =:| :8 E/5 F/5 :h A/4|\n"
-        ++ "text :hd, .1, , | , 1────────────, | \n"
-        ++ "text ++ :hd, .1, , | , , | , 2────────────, | \n"
+        ++ "notes :q A/4 B/4 :8 C/5 D/5 |  E/5 $.top.$ $1───$ F/5  :q A/4 D/4 =:| :8 E/5 $.top.$ $2───$ F/5 :h A/4 |\n"
