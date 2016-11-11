@@ -3,7 +3,6 @@ module VexTabBasic exposing (..)
 import Html exposing (Html, Attribute, text, div, input, button, textarea, canvas)
 import Html.Attributes exposing (..)
 import Html.Events exposing (on, onClick, onInput)
-import Html.App as Html
 import VexTab exposing (..)
 import VexTab.Config exposing (Config)
 
@@ -157,7 +156,7 @@ btnStyle =
 
 sampleVexText : String
 sampleVexText =
-       "stave \n"
+    "stave \n"
         ++ "notation=true \n"
         ++ "key=G time=3/4 \n"
         ++ "notes :q A/4 B/4 :8 C/5 D/5 |  E/5 $.top.$ $1───$ F/5  :q A/4 D/4 =:| :8 E/5 $.top.$ $2───$ F/5 :h A/4 |\n"
